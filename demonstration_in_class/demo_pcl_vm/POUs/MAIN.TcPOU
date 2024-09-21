@@ -4,13 +4,19 @@
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
 	my_counter : INT := 0;
+	btn : BOOL;
+	lmp : BOOL;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[my_counter := my_counter + 1;]]></ST>
+      <ST><![CDATA[my_counter := my_counter + 2;
+
+gvl.lamp_on := gvl.button_pressed;]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="2" Count="0" />
+      <LineId Id="10" Count="0" />
+      <LineId Id="9" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>
